@@ -12,6 +12,6 @@ All team members can use this Trello board to track project tasks.
 
 #### Project Plan
 
-An excel sheet has been developed, in which all steps to the project are borken into weeks over the course of the next 3 months.
+An excel sheet has been developed, in which all steps to the project are broken into weeks over the course of the next 3 months.
 
 - [Project Plan](https://docs.google.com/spreadsheets/d/1zUXeUu7ceJ1TZbbRQ6UzTBJNdOCcpLiqsexRYvNkBF0/edit?usp=sharing)
