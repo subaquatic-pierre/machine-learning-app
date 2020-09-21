@@ -8,10 +8,10 @@ Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 
 All team members can use this Trello board to track project tasks.
 
-- [Machine Learning Pipeline - Trello Board](https://trello.com/b/43FaIYZI/machine-learning-pipeline)
+- [Trello Board](https://trello.com/b/43FaIYZI/machine-learning-pipeline)
 
 #### Project Plan
 
 An excel sheet has been developed, in which all steps to the project are borken into weeks over the course of the next 3 months.
 
-- [Machine Learning Pipeline - Project Plan](https://docs.google.com/spreadsheets/d/1zUXeUu7ceJ1TZbbRQ6UzTBJNdOCcpLiqsexRYvNkBF0/edit?usp=sharing)
+- [Project Plan](https://docs.google.com/spreadsheets/d/1zUXeUu7ceJ1TZbbRQ6UzTBJNdOCcpLiqsexRYvNkBF0/edit?usp=sharing)
