@@ -1,6 +1,6 @@
 # Machine Learning Pipeline
 
-![GitHub CI](https://github.com/subaquatic-pierre/udacity-ml-pipeline-project/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+![GitHub CI](https://github.com/subaquatic-pierre/udacity-ml-pipeline-project/workflows/GitHub%20CI/badge.svg)
 
 Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 
