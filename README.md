@@ -5,11 +5,13 @@
 
 Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 
-[Application URL](https://machine-learning-app.azurewebsites.net)
-
 Welcome to the Machine Learning Pipeline. This project is used to create a machine learning pipeline which runs on Microsoft Azure. The application is hosted with an application service. All changes to source code are pushed to Github. Once changes have been pushed it triggers the pipeline. The first step in the pipeline is integration testing with Github actions. Once the integration testing is complete the project is shipped to the continuous delivery system in Azure. Once the tests are passed with application is uploaded to the web application.
 
 The web app itself serves as a machine learning API, it determines the price on Boston house based on a machine learning model derived from data, which includes number of rooms, teaches to pupil ratios, size of the house and many data points.
+
+The application can be reached at the following URL
+
+https://machine-learning-app.azurewebsites.net
 
 ## Getting started
 
@@ -22,6 +24,8 @@ Before starting this project you should have the following:
 If you do not have these please follow the Microsoft Azure walk-through in the [Resources](#Resources) section to complete these steps.
 
 ## Diagram
+
+Below is a diagram of the basic architecture of the pipeline
 
 <img src='/screenshots/diagram.png'/>
 
