@@ -14,10 +14,4 @@ jobs:
           python-version: 3.5
       - name: Install dependencies
         run: |
-          make install
-      - name: Lint with pylint
-        run: |
-          make lint
-      - name: Test with pytest
-        run: |
-          make test
+          make github
