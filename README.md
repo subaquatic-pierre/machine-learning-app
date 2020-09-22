@@ -108,3 +108,4 @@ An excel sheet has been developed, in which all steps to the project are broken 
 ## Resources
 
 - [Create Python webapp with Azure](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
+- [Setup Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)

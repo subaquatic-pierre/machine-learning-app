@@ -15,6 +15,6 @@ github:
 
 lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
-	python -m pylint --disable=R,C,W1203 app.py
+	python -m pylint --disable=R,C,W1203,W0702 app.py
 
 all: install lint test
