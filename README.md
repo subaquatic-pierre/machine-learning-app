@@ -12,7 +12,7 @@ Before starting this project you should have the following:
 - Azure DevOps organization
 - Azure CLI
 
-If you do not have these please follow the resources in the "Notes" section to complete these actions and then come back to complete the walk-through
+If you do not have these please follow the resources in the [Resources](#Resources) section to complete these actions and then come back to complete the walk-through
 
 ## Steps
 
@@ -105,7 +105,7 @@ An excel sheet has been developed, in which all steps to the project are broken 
 
 - [Project Plan](https://docs.google.com/spreadsheets/d/1zUXeUu7ceJ1TZbbRQ6UzTBJNdOCcpLiqsexRYvNkBF0/edit?usp=sharing)
 
-## Resources
+#### Microsoft Azure walk-throughs
 
 - [Create Python webapp with Azure](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
 - [Setup Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml)
