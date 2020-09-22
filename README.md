@@ -10,10 +10,13 @@ Before starting this project you should have the following:
 
 - Azure account
 - Azure DevOps organization
+- Azure CLI
 
 If you do not have these please follow the resources in the "Notes" section to complete these actions and then come back to complete the walk-through
 
 ## Steps
+
+All the commands a run using the Azure CLI
 
 1. Clone this repo
 2. Create resource group
@@ -102,6 +105,6 @@ An excel sheet has been developed, in which all steps to the project are broken 
 
 - [Project Plan](https://docs.google.com/spreadsheets/d/1zUXeUu7ceJ1TZbbRQ6UzTBJNdOCcpLiqsexRYvNkBF0/edit?usp=sharing)
 
-## Notes
+## Resources
 
-How to get the Application service connection ID
+- [Create Python webapp with Azure](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
