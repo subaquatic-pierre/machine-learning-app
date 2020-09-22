@@ -16,7 +16,7 @@ If you do not have these please follow the Microsoft Azure walk-through in the [
 
 ## Diagram
 
-![diagram]('screenshots/diagram.png')
+<img src='/screenshots/diagram.png'/>
 
 ## Steps
 
