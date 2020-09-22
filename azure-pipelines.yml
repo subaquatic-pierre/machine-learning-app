@@ -13,11 +13,11 @@ variables:
   # Web app name
   webAppName: "machine-learning-app"
 
-  # Agent VM image name
-  vmImageName: "ubuntu-latest"
-
   # Environment name
   environmentName: "machine-learning-app"
+
+  # Agent VM image name
+  vmImageName: "ubuntu-latest"
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -88,7 +88,7 @@ stages:
                   displayName: "Use Python version"
 
                 - task: AzureWebApp@1
-                  displayName: "Deploy Azure Web App : machine-learning-app"
+                  displayName: "Deploy Azure Web App : $(webAppName)"
                   inputs:
                     azureSubscription: $(azureServiceConnectionId)
                     appName: $(webAppName)
