@@ -69,7 +69,7 @@ expected output:
 
 ```
 
-az webapp up --name NAME_OF_APP --g RESOURCE_GROUP_NAME:
+az webapp up --name NAME_OF_APP --g RESOURCE_GROUP_NAME
 
 ```
 
@@ -199,7 +199,7 @@ The road map for the future of the project will include the following features
 
 Visit this Youtube link for an overview of the project
 
-This is the link
+[YouTube Demo](https://www.youtube.com/watch?v=jh4vJfiwvM0)
 
 ## Resources
 
