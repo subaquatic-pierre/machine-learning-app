@@ -1,6 +1,6 @@
 # Machine Learning Pipeline
 
-![Github CI](https://github.com/subaquatic-pierre/udacity-ml-pipeline-project/workflows/Github%20CI/badge.svg)
+![Github CI](https://github.com/subaquatic-pierre/machine-learning-app/workflows/Github%20CI/badge.svg)
 
 Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 
@@ -13,6 +13,10 @@ Before starting this project you should have the following:
 - Azure CLI
 
 If you do not have these please follow the Microsoft Azure walk-through in the [Resources](#Resources) section to complete these steps.
+
+## Diagram
+
+![diagram]('/screenshots/diagram.png')
 
 ## Steps
 
@@ -121,7 +125,14 @@ git push -u origin master
 
 ```
 https://{app-name}.azurewebsites.net
+
 ```
+
+## Output
+
+Once you have completed this walk-through you will have a fully functioning machine learning pipeline which handles requests over the internet. The program returns JSON format string determine prices of houses in Boston based on machine learning algorithm.
+
+You will have a fully integrated pipeline which includes continuous integration step with Github actions, which performs linting and testing before the code is sent to the continuous development stage with the use of Azure pipelines.
 
 ## Resources
 
