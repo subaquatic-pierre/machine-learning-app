@@ -9,11 +9,15 @@ Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 1. Clone this repo
 2. Create resource group
 
+```
    az group create --name NAME_OF_GROUP --location LOCATION_OF_GROUP
+```
 
 3. Create web app
 
+```
    az webapp up --name NAME_OF_APP --g RESOURCE_GROUP_NAME
+```
 
 4. Create new Azure DevOps project
 5. Create new pipeline, select Github repo
