@@ -2,8 +2,6 @@
 
 ![Github CI](https://github.com/subaquatic-pierre/machine-learning-app/workflows/Github%20CI/badge.svg)
 
-Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
-
 Welcome to the Machine Learning Pipeline. This project is used to create a machine learning pipeline which runs on Microsoft Azure. The application is hosted with an application service. All changes to source code are pushed to Github. Once changes have been pushed it triggers the pipeline. The first step in the pipeline is integration testing with Github actions. Once the integration testing is complete the project is shipped to the continuous delivery system in Azure. Once the tests are passed with application is uploaded to the web application.
 
 The web app itself serves as a machine learning API, it determines the price on Boston house based on a machine learning model derived from data, which includes number of rooms, teaches to pupil ratios, size of the house and many data points.
