@@ -1,8 +1,7 @@
 # Machine Learning Pipeline
 
-![Build Status](https://dev.azure.com/subaquaticpierre/machine-learning-app/_apis/build/status/subaquatic-pierre.machine-learning-app?branchName=master)
-
 ![Github CI](https://github.com/subaquatic-pierre/machine-learning-app/workflows/Github%20CI/badge.svg)
+<img src="https://dev.azure.com/subaquaticpierre/machine-learning-app/_apis/build/status/subaquatic-pierre.machine-learning-app?branchName=master" />
 
 Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 
