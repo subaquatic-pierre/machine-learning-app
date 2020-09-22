@@ -1,8 +1,15 @@
 # Machine Learning Pipeline
 
 ![Github CI](https://github.com/subaquatic-pierre/machine-learning-app/workflows/Github%20CI/badge.svg)
+[![Build Status](https://dev.azure.com/subaquaticpierre/machine-learning-app/_apis/build/status/subaquatic-pierre.udacity-ml-pipeline-project?branchName=master)](https://dev.azure.com/subaquaticpierre/machine-learning-app/_build/latest?definitionId=4&branchName=master)
 
 Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
+
+[Application URL](https://machine-learning-app.azurewebsites.net)
+
+Welcome to the Machine Learning Pipeline. This project is used to create a machine learning pipeline which runs on Microsoft Azure. The application is hosted with an application service. All changes to source code are pushed to Github. Once changes have been pushed it triggers the pipeline. The first step in the pipeline is integration testing with Github actions. Once the integration testing is complete the project is shipped to the continuous delivery system in Azure. Once the tests are passed with application is uploaded to the web application.
+
+The web app itself serves as a machine learning API, it determines the price on Boston house based on a machine learning model derived from data, which includes number of rooms, teaches to pupil ratios, size of the house and many data points.
 
 ## Getting started
 
@@ -42,15 +49,15 @@ expected output:
 ```
 
 {
-"id": "/subscriptions/{subscription-id}/resourceGroups/{name-of-group}",
-"location": "{location}",
-"managedBy": null,
-"name": "{name-of-group}",
-"properties": {
-"provisioningState": "Succeeded"
+   "id": "/subscriptions/{subscription-id}/resourceGroups/{name-of-group}",
+   "location": "{location}",
+   "managedBy": null,
+   "name": "{name-of-group}",
+   "properties": {
+   "provisioningState": "Succeeded"
 },
-"tags": null,
-"type": "Microsoft.Resources/resourceGroups"
+   "tags": null,
+   "type": "Microsoft.Resources/resourceGroups"
 }
 
 ```
@@ -92,7 +99,13 @@ You can launch the app at http://{app-name}.azurewebsites.net
 
 4. Create new Azure DevOps project
 5. Create new pipeline, select Github repo
-6. Get service connection ID
+6. Create Service Connection
+
+```
+https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops#create-an-azure-devops-project-and-connect-to-azure
+```
+
+7. Get service connection ID
 
 ```
 
@@ -100,11 +113,34 @@ https://dev.azure.com/{organization}/{project}/_apis/serviceendpoint/endpoints?a
 
 ```
 
-7. Edit azure-pipelines.yml
+expected output:
+
+```json
+{
+   count: 2,
+   value: [
+      {
+         data: {
+            ...
+            pipelinesSourceProvider: "github",
+            ...
+            },
+         data: {
+            environment: "AzureCloud",
+            ...
+            },
+            id: "78a428c7-5e33-43e0-a4b9-93a9d8e61c3a",
+            ...
+         },
+   ],
+}
+```
+
+8. Edit azure-pipelines.yml
 
 ```yaml
 # Azure Resource Manager connection created during pipeline creation
-azureServiceConnectionId: "NEED THIS"
+azureServiceConnectionId: "{app-service-connection-id}"
 
 # Web app name
 webAppName: "{app-name}"
@@ -113,7 +149,7 @@ webAppName: "{app-name}"
 environmentName: "{app-name}"
 ```
 
-8. Add all changes, commit and push to Github
+9. Add all changes, commit and push to Github
 
 ```
 git add .
@@ -121,7 +157,7 @@ git commit -m 'Completed pipeline configuration'
 git push -u origin master
 ```
 
-9. Check your application is working
+10. Check your application is working
 
 ```
 https://{app-name}.azurewebsites.net
@@ -133,6 +169,22 @@ https://{app-name}.azurewebsites.net
 Once you have completed this walk-through you will have a fully functioning machine learning pipeline which handles requests over the internet. The program returns JSON format string determine prices of houses in Boston based on machine learning algorithm.
 
 You will have a fully integrated pipeline which includes continuous integration step with Github actions, which performs linting and testing before the code is sent to the continuous development stage with the use of Azure pipelines.
+
+To access to application log files follow this link, add the name of your app
+
+```
+   https://<app-name>.scm.azurewebsites.net/api/logs/docker
+```
+
+## Enhancements
+
+The road map for the future of the project will include the following features
+
+- More house pricing models for more cities
+- User interface for selecting more cities
+- Admin interface for creating more cities
+- User profile to store searches
+- Add more data points to the dataset
 
 ## Resources
 
