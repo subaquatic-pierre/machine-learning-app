@@ -76,7 +76,9 @@ You can launch the app at http://{app-name}.azurewebsites.net
 5. Create new pipeline, select Github repo
 6. Get service connection ID
 
+```
    https://dev.azure.com/{organization}/{project}/_apis/serviceendpoint/endpoints?api-version=5.0-preview.2
+```
 
 7. Edit azure-pipelines.yml
 
@@ -89,6 +91,20 @@ webAppName: "{app-name}"
 
 # Environment name
 environmentName: "{app-name}"
+```
+
+8. Add all changes, commit and push to Github
+
+```
+git add .
+git commit -m 'Completed pipeline configuration'
+git push -u origin master
+```
+
+9. Check your application is working
+
+```
+https://{app-name}.azurewebsites.net
 ```
 
 ## Resources
