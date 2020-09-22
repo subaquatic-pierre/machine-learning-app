@@ -1,7 +1,7 @@
 # Machine Learning Pipeline
 
 ![Github CI](https://github.com/subaquatic-pierre/machine-learning-app/workflows/Github%20CI/badge.svg)
-[![Build Status](https://dev.azure.com/subaquaticpierre/machine-learning-app/_apis/build/status/subaquatic-pierre.udacity-ml-pipeline-project?branchName=master)](https://dev.azure.com/subaquaticpierre/machine-learning-app/_build/latest?definitionId=4&branchName=master)
+[![Build Status](https://dev.azure.com/subaquaticpierre/machine-learning-app/_apis/build/status/subaquatic-pierre.machine-learning-app?branchName=master)](https://dev.azure.com/subaquaticpierre/machine-learning-app/_build/latest?definitionId=5&branchName=master)
 
 Machine Learning Pipeline - Final Project 2 for Udacity DevOps with Azure.
 
@@ -9,7 +9,7 @@ Welcome to the Machine Learning Pipeline. This project is used to create a machi
 
 The web app itself serves as a machine learning API, it determines the price on Boston house based on a machine learning model derived from data, which includes number of rooms, teaches to pupil ratios, size of the house and many data points.
 
-The application can be reached at the following URL
+#### The application can be reached at the following URL
 
 https://machine-learning-app.azurewebsites.net
 
@@ -31,7 +31,7 @@ Below is a diagram of the basic architecture of the pipeline
 
 ## Steps
 
-All the commands are run using the Azure CLI
+Follow these steps to create you own machine learning DevOps pipeline
 
 1. Clone this repo, and CD into directory
 
@@ -40,7 +40,7 @@ git clone git@github.com:subaquatic-pierre/machine-learning-app.git
 cd machine-learning-app
 ```
 
-2. Create resource group
+2. Create a resource group using the Azure CLI
 
 ```
 
@@ -66,11 +66,11 @@ expected output:
 
 ```
 
-3. Create web app
+3. Create a new web app service using the Azure CLI
 
 ```
 
-az webapp up --name NAME_OF_APP --g RESOURCE_GROUP_NAME
+az webapp up --name NAME_OF_APP --g RESOURCE_GROUP_NAME:
 
 ```
 
@@ -101,15 +101,21 @@ You can launch the app at http://{app-name}.azurewebsites.net
 
 ```
 
-4. Create new Azure DevOps project
-5. Create new pipeline, select Github repo
-6. Create Service Connection
+4. Create new Azure DevOps project:
+
+   Follow instructions from the [Resources](#Resources) section to setup a DevOps project
+
+5. Create new pipeline, select Github repo:
+
+   Follow instructions from the [Resources](#Resources) section to setup a pipeline
+
+6. Create Service Connection:
 
 ```
 https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops#create-an-azure-devops-project-and-connect-to-azure
 ```
 
-7. Get service connection ID
+7. Get service connection ID:
 
 ```
 
@@ -140,7 +146,7 @@ expected output:
 }
 ```
 
-8. Edit azure-pipelines.yml
+8. Edit azure-pipelines.yml to update variables for your application:
 
 ```yaml
 # Azure Resource Manager connection created during pipeline creation
@@ -153,7 +159,7 @@ webAppName: "{app-name}"
 environmentName: "{app-name}"
 ```
 
-9. Add all changes, commit and push to Github
+9. Add all changes, commit and push to Github:
 
 ```
 git add .
@@ -161,7 +167,7 @@ git commit -m 'Completed pipeline configuration'
 git push -u origin master
 ```
 
-10. Check your application is working
+10. Check your application is working:
 
 ```
 https://{app-name}.azurewebsites.net
