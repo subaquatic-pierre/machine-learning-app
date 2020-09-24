@@ -67,7 +67,7 @@ expected output:
 
 ```
 
-az webapp up --name NAME_OF_APP --g RESOURCE_GROUP_NAME
+az webapp up --name NAME_OF_APP -g RESOURCE_GROUP_NAME
 
 ```
 
